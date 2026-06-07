@@ -14,10 +14,9 @@
         <div class="col-12 col-sm-6">
           <div class="right-part">
             <h3 class="text-end">
-              Freelance Web Developer & Designer based in Lille.
-              I have several years of experience in the digital world.
-              I enjoy minimalist and abstract design.
-              I love nature, pizza, and art.
+              Freelance web developer & designer,
+              I enjoy minimalist, and abstract designs. 
+              I draw inspiration from nature and art.
             </h3>
             <a class="btn button" href="#contact">CONTACT ME.</a>
           </div>

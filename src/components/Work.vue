@@ -67,12 +67,22 @@
 import LiquidEther from './LiquidEther.vue'
 
 const projects = [
+    {
+    title: "Luca Consulting",
+    description:
+      "As part of this collaboration with the Studio Bento, I was tasked with redesigning the website for the Luca Consulting, architectural agency. The development was carried out based on a detailed mockup and specifications.",
+    technos:
+      "Web Development | Integration | Wordpress | Custom Theme | Figma | HTML CSS JS PHP | ACF",
+    link: "https://luca-consulting.com/",
+    image: "/assets/img/works/luca.png",
+    alt: "Project Luca Consulting",
+  },
   {
     title: "Paris & Co",
     description:
       "As part of this collaboration with the Sharing agency, I was tasked with redesigning the website for the Paris&Co association, the territorial innovation agency of Paris and its metropolitan area. The development was carried out based on a detailed mockup and specifications.",
     technos:
-      "Web Development | Integration | Wordpress | Elementor | Adobe Xd | HTML. CSS. JS. PHP",
+      "Web Development | Integration | Wordpress | Elementor | Adobe Xd | HTML CSS JS PHP",
     link: "https://www.parisandco.com/",
     image: "/assets/img/works/paris-co.png",
     alt: "Project Paris&Co",
@@ -108,7 +118,7 @@ const projects = [
     title: "Groupe FIDEIP - Palamatic France",
     description:
       "During this project, in close collaboration with the web and marketing teams of the FIDEIP – Palamatic France group, I was tasked with developing a custom, tailor-made WordPress theme.",
-    technos: "Web Development | Integration | Développement de thème | Wordpress | DIVI | CSS",
+    technos: "Web Development | Theme development | Integration | Wordpress | DIVI",
     link: "https://www.fideip.fr/",
     image: "/assets/img/works/fideip.png",
     alt: "Project Groupe FIDEIP",

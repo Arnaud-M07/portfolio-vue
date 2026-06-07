@@ -56,7 +56,6 @@
         <!-- COL PHOTO -->
         <div class="col-12 col-lg-6">
           <div class="wrapper">
-            <!-- LiquidEther Background -->
             <div class="liquid-ether-container">
               <LiquidEther
                 :colors="['#48FF28', '#A2FFC6', '#9EF19E']"
@@ -74,11 +73,10 @@
                 :takeoverDuration="0.25"
                 :autoResumeDelay="3000"
                 :autoRampDuration="0.6"
-                style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1;"
+                style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;"
               />
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -117,7 +115,7 @@
 
 .wrapper {
   position: relative;
-  height: 100%;
+  min-height: 435px;
   border-radius: 1rem;
   overflow: hidden;
 }
@@ -128,6 +126,5 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
 </style>

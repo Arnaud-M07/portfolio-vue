@@ -85,7 +85,7 @@ const cleanup = () => {
 };
 
 onMounted(() => {
-  initializeScrambleText();
+  document.fonts.ready.then(() => initializeScrambleText());
 });
 
 onUnmounted(() => {

@@ -62,8 +62,8 @@ body {
 h1,
 h2 {
     font-family: "Tusker-grotesk";
-    font-size: 140px;
-    line-height: 140px;
+    font-size: 120px;
+    line-height: 120px;
     text-transform: uppercase;
     color: var(--white);
 }
@@ -83,12 +83,11 @@ h1.visible span {
 }
 
 @media all and (min-width: 992px) {
-
-    h1,
-    h2 {
-        font-size: 200px;
-        line-height: 200px;
-    }
+  h1,
+  h2 {
+    font-size: 200px;
+    line-height: 200px;
+  }
 }
 
 h3,
@@ -272,7 +271,6 @@ header nav .nav-link:hover {
 
 .hero-header {
     height: 100vh;
-    background-image: url('..src/assets/img/herobanner-bg.jpg');
     background-size: cover;
     display: flex;
     align-items: flex-end;
@@ -398,7 +396,6 @@ header nav .nav-link:hover {
 
 .skills {
     padding: 20px 0px;
-    background-image: url('../img/herobanner-bg.jpg');
     background-size: cover;
     overflow: hidden;
 }

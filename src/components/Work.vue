@@ -67,15 +67,35 @@
 import LiquidEther from './LiquidEther.vue'
 
 const projects = [
-    {
+  {
     title: "Luca Consulting",
     description:
       "As part of this collaboration with the Studio Bento, I was tasked with redesigning the website for the Luca Consulting, architectural agency. The development was carried out based on a detailed mockup and specifications.",
     technos:
-      "Web Development | Integration | Wordpress | Custom Theme | Figma | HTML CSS JS PHP | ACF",
+      "Web Development | Full-Stack Development | Wordpress | Custom Theme | Figma | HTML CSS JS PHP | ACF",
     link: "https://luca-consulting.com/",
     image: "/assets/img/works/luca.png",
     alt: "Project Luca Consulting",
+  },
+  {
+    title: "Toulouse tournages",
+    description:
+      "An interactive web platform exploring the filming locations of the Toulouse region — from iconic landmarks to hidden spots — alongside the movies and productions that brought them to life on screen.",
+    technos:
+      "Web Development | Front-End Development | Wordpress | Custom Theme | Figma | HTML CSS JS PHP | ACF",
+    link: "https://www.toulouse-tournages.fr/",
+    image: "/assets/img/works/toulouse-tournages.png",
+    alt: "Project Toulouse tournages",
+  },
+  {
+    title: "Provence Méditerranée",
+    description:
+      "Website for the Provence Méditerranée tourism office — showcasing the region's destinations, cultural heritage, and local experiences to visitors from across the world.",
+    technos:
+      "Web Development | Front-End Development | Wordpress | Custom Theme | HTML CSS JS PHP | ACF",
+    link: "https://www.provencemed.com/",
+    image: "/assets/img/works/provence-mediterranee.png",
+    alt: "Project Provence Méditerranée",
   },
   {
     title: "Paris & Co",
@@ -105,15 +125,15 @@ const projects = [
     image: "/assets/img/works/actif-signal.png",
     alt: "Project Actif Signal",
   },
-  {
-    title: "Mutuelle Française des Chemins de Fer",
-    description:
-      "During this project in collaboration with the Efficience Digitale agency, I was tasked with developing and designing part of the website for MFCF – Mutuelle Française des Chemins de Fer. The development was carried out based on a detailed mockup and specifications.",
-    technos: "Web Development | Integration | Web design | Wordpress | Elementor | Figma",
-    link: "https://www.mutuelle-cheminots.fr/",
-    image: "/assets/img/works/mfcf.png",
-    alt: "Project MFCF",
-  },
+  // {
+  //   title: "Mutuelle Française des Chemins de Fer",
+  //   description:
+  //     "During this project in collaboration with the Efficience Digitale agency, I was tasked with developing and designing part of the website for MFCF – Mutuelle Française des Chemins de Fer. The development was carried out based on a detailed mockup and specifications.",
+  //   technos: "Web Development | Integration | Web design | Wordpress | Elementor | Figma",
+  //   link: "https://www.mutuelle-cheminots.fr/",
+  //   image: "/assets/img/works/mfcf.png",
+  //   alt: "Project MFCF",
+  // },
   {
     title: "Groupe FIDEIP - Palamatic France",
     description:

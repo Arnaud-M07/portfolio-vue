@@ -1239,7 +1239,22 @@ watch(
 );
 
 onMounted(() => {
-  initWebGL();
+  if (!mountRef.value) return;
+  const rect = mountRef.value.getBoundingClientRect();
+  if (rect.width > 0 && rect.height > 0) {
+    initWebGL();
+    return;
+  }
+  // Container has no dimensions yet (deferred CSS not applied) — wait for layout
+  const waiter = new ResizeObserver(() => {
+    if (!mountRef.value) return;
+    const r = mountRef.value.getBoundingClientRect();
+    if (r.width > 0 && r.height > 0) {
+      waiter.disconnect();
+      initWebGL();
+    }
+  });
+  waiter.observe(mountRef.value);
 });
 
 onUnmounted(() => {

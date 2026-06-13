@@ -9,11 +9,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "optimize-images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
     "22": "^0.0.0",
     "aos": "^2.3.4",
+    "bootstrap": "^5.3.2",
     "gsap": "^3.13.0",
     "motion-v": "^1.7.4",
     "three": "^0.181.1",
@@ -21,7 +23,10 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
+    "sharp": "^0.35.1",
+    "ttf2woff2": "^8.0.1",
     "vite": "^7.1.11",
+    "vite-plugin-beasties": "^0.4.2",
     "vite-plugin-vue-devtools": "^8.0.3"
   }
 }

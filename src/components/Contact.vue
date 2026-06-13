@@ -1,5 +1,5 @@
 <template>
-  <section class="contact" id="contact" data-aos="fade-up">
+  <section class="contact" id="contact" data-aos="fade-up" aria-label="Contact">
     <div class="container">
       <div class="row flex-column-reverse flex-sm-row">
         <div class="col-12 col-sm-6 order-2 order-sm-2">
@@ -27,7 +27,7 @@
                 <h3>EMAIL.</h3>
               </div>
               <div class="col">
-                <a class="btn button" href="mailto: arnaudmonteux@gmail.com">SEA.</a>
+                <a class="btn button" href="mailto:arnaudmonteux@gmail.com" aria-label="Send an email">SEA.</a>
               </div>
             </div>
             <!-- GITHUB ROW -->
@@ -37,7 +37,7 @@
                 <h3>Github.</h3>
               </div>
               <div class="col">
-                <a class="btn button" href="https://github.com/Arnaud-M07" target="_blank">SEX.</a>
+                <a class="btn button" href="https://github.com/Arnaud-M07" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile">SEX.</a>
               </div>
             </div>
             <hr>
@@ -48,7 +48,7 @@
                 <h3>MALT.</h3>
               </div>
               <div class="col">
-                <a class="btn button" href="https://www.malt.fr/profile/arnaudmonteux" target="_blank">SUN.</a>
+                <a class="btn button" href="https://www.malt.fr/profile/arnaudmonteux" target="_blank" aria-label="View Malt profile">SUN.</a>
               </div>
             </div>
             <hr>
@@ -88,43 +88,43 @@
 </script>
 
 <style scoped>
-.contact {
-    padding: 30px 0px;
-}
+  .contact {
+    padding: 1.875rem 0;
+  }
 
-.contact .row {
-    margin-top: 40px;
-}
+  .contact .row {
+    margin-top: 2.5rem;
+  }
 
-.contact .row-contacts {
-    margin: 0px;
+  .contact .row-contacts {
+    margin: 0;
     display: flex;
     align-items: center;
-}
+  }
 
-.contact .text-right {
-    display: flex;
-    align-items: flex-end;
-}
+  .contact .text-right {
+      display: flex;
+      align-items: flex-end;
+  }
 
-.contact .col-list {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
+  .contact .col-list {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2.5rem;
+  }
 
-.wrapper {
-  position: relative;
-  min-height: 435px;
-  border-radius: 1rem;
-  overflow: hidden;
-}
+  .wrapper {
+    position: relative;
+    min-height: 435px;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
 
-.liquid-ether-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  .liquid-ether-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 </style>

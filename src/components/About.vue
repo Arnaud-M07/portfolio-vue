@@ -1,5 +1,5 @@
 <template>
-  <section class="about" id="about" data-aos="fade-up">
+  <section class="about" id="about" data-aos="fade-up" aria-label="About">
     <div class="container">
       <div class="row">
         <!-- Texte gauche -->
@@ -27,7 +27,14 @@
         <!-- Portrait droite -->
         <div class="col-12 col-lg-5 about-right">
           <div class="photo-portrait shape-blur-wrapper">
-            <img src="/assets/img/portrait.jpg" alt="Portrait of Arnaud Monteux" />
+            <img
+  srcset="/assets/img/portrait.webp 800w, /assets/img/portrait@2x.webp 1152w"
+  sizes="(min-width: 992px) 500px, 95vw"
+  src="/assets/img/portrait.webp"
+  alt="Portrait of Arnaud Monteux"
+  loading="eager"
+  fetchpriority="high"
+/>
           </div>
         </div>
       </div>
@@ -42,7 +49,7 @@ import ScrambleText from "./ScrambleText.vue";
 <style scoped>
 .about {
   min-height: 100vh;
-  padding: 100px 0px;
+  padding: 6.25rem 0;
   display: flex;
   align-items: center;
 }

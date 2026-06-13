@@ -36,7 +36,8 @@ const initializeScrambleText = () => {
   if (!pElement) return;
 
   splitText = new SplitText(pElement, {
-    type: 'chars',
+    type: 'words,chars',
+    wordsClass: 'inline-block',
     charsClass: 'inline-block will-change-transform'
   });
 

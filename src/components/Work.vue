@@ -1,5 +1,5 @@
 <template>
-  <section class="work" id="work" data-aos="fade-up">
+  <section class="work" id="work" data-aos="fade-up" aria-label="Work">
     <div class="container">
       <div class="row" data-aos="fade-up">
         <div class="col-12 col-lg-6">
@@ -25,12 +25,12 @@
           <hr />
           <p class="technos">{{ project.technos }}</p>
           <hr />
-          <a class="btn button" :href="project.link" target="_blank">SEE.</a>
+          <a class="btn button" :href="project.link" target="_blank" rel="noopener noreferrer" :aria-label="'View project: ' + project.title">SEE.</a>
         </div>
         <div class="col-12 col-lg-6">
           <div class="photo-project">
-            <a :href="project.link" target="_blank">
-              <img :src="project.image" :alt="project.alt" />
+            <a :href="project.link" target="_blank" rel="noopener noreferrer" :aria-label="'View project: ' + project.title" tabindex="-1" aria-hidden="true">
+              <img :src="project.image" :alt="project.alt" loading="lazy" />
             </a>
 
             <!-- LiquidEther Background -->
@@ -74,7 +74,7 @@ const projects = [
     technos:
       "Web Development | Full-Stack Development | WordPress | Custom Theme | Figma | HTML CSS JS PHP | ACF",
     link: "https://luca-consulting.com/",
-    image: "/assets/img/works/luca.png",
+    image: "/assets/img/works/luca.webp",
     alt: "Project Luca Consulting",
   },
   {
@@ -84,7 +84,7 @@ const projects = [
     technos:
       "Web Development | Front-End Development | WordPress | Custom Theme | Figma | HTML CSS JS PHP | ACF",
     link: "https://www.toulouse-tournages.fr/",
-    image: "/assets/img/works/toulouse-tournages.png",
+    image: "/assets/img/works/toulouse-tournages.webp",
     alt: "Project Toulouse tournages",
   },
   {
@@ -94,7 +94,7 @@ const projects = [
     technos:
       "Web Development | Front-End Development | WordPress | Custom Theme | HTML CSS JS PHP | ACF",
     link: "https://www.provencemed.com/",
-    image: "/assets/img/works/provence-mediterranee.png",
+    image: "/assets/img/works/provence-mediterranee.webp",
     alt: "Project Provence Méditerranée",
   },
   {
@@ -104,7 +104,7 @@ const projects = [
     technos:
       "Web Development | Integration | WordPress | Elementor | Adobe Xd | HTML CSS JS PHP",
     link: "https://www.parisandco.com/",
-    image: "/assets/img/works/paris-co.png",
+    image: "/assets/img/works/paris-co.webp",
     alt: "Project Paris&Co",
   },
   {
@@ -113,7 +113,7 @@ const projects = [
       "During this project in collaboration with the Sharing agency, I was tasked with developing the website for Lovell Consulting, a consulting firm specialized in risk management and IT security governance. The development was carried out based on a detailed mockup and specifications.",
     technos: "Web Development | Integration | WordPress | Elementor | Adobe Xd",
     link: "https://lovell-consulting.com/",
-    image: "/assets/img/works/lovell.png",
+    image: "/assets/img/works/lovell.webp",
     alt: "Project Lovell Consulting",
   },
   {
@@ -122,7 +122,7 @@ const projects = [
       "As part of this collaboration, I was tasked with creating a complete showcase website based on a mockup provided by the client: Actif Signal. The site was built using WordPress and the Elementor builder.",
     technos: "Web Development | Integration | WordPress | Elementor | Adobe Xd",
     link: "https://www.actif-signal.fr/",
-    image: "/assets/img/works/actif-signal.png",
+    image: "/assets/img/works/actif-signal.webp",
     alt: "Project Actif Signal",
   },
   // {
@@ -131,7 +131,7 @@ const projects = [
   //     "During this project in collaboration with the Efficience Digitale agency, I was tasked with developing and designing part of the website for MFCF – Mutuelle Française des Chemins de Fer. The development was carried out based on a detailed mockup and specifications.",
   //   technos: "Web Development | Integration | Web design | WordPress | Elementor | Figma",
   //   link: "https://www.mutuelle-cheminots.fr/",
-  //   image: "/assets/img/works/mfcf.png",
+  //   image: "/assets/img/works/mfcf.webp",
   //   alt: "Project MFCF",
   // },
   {
@@ -140,7 +140,7 @@ const projects = [
       "During this project, in close collaboration with the web and marketing teams of the FIDEIP – Palamatic France group, I was tasked with developing a custom, tailor-made WordPress theme.",
     technos: "Web Development | Theme development | Integration | WordPress | DIVI",
     link: "https://www.fideip.fr/",
-    image: "/assets/img/works/fideip.png",
+    image: "/assets/img/works/fideip.webp",
     alt: "Project Groupe FIDEIP",
   },
 ]
@@ -148,60 +148,58 @@ const projects = [
 
 <style scoped>
 .work {
-    padding: 100px 0px;
+  padding: 6.25rem 0;
 }
 
 .work .row {
-    margin: 40px 0;
+  margin: 2.5rem 0;
 }
 
 .work .text-end {
   display: flex;
   align-items: flex-end;
-
 }
 
 
 .work .text-right {
-    display: flex;
-    align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 
 .work .photo-project {
-    width: 100%;
-    height: 35vh;
-    flex-shrink: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
+  width: 100%;
+  height: 35vh;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 .work .photo-project a{
-    height: 100%;
+  height: 100%;
 }
 
 .work .photo-project img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0.5rem;
-    object-fit: cover;
-    transition: transform .8s ease-in-out;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transition: transform .8s ease-in-out;
 }
 
 .work .photo-project:hover img {
-    transform: scale(1.025);
-    /* Zoom au survol */
+  transform: scale(1.025);
 }
 
 
 @media all and (min-width: 992px) {
-    .work .photo-project {
-        height: 45vh;
-    }
+  .work .photo-project {
+    height: 45vh;
+  }
 }
 
 .liquid-ether-container {

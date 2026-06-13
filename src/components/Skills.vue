@@ -1,5 +1,5 @@
 <template>
-  <section class="skills">
+  <section class="skills" aria-label="Skills">
     <ScrollVelocity
        :texts="[
         'PHP JS GULP SCSS GIT FIGMA',

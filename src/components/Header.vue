@@ -1,10 +1,10 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg header header-hide">
+    <nav class="navbar navbar-expand-lg header header-hide" aria-label="Main navigation">
       <div class="container">
         <div class="d-flex">
-          <a class="navbar-brand white" href="#hero-banner">Arnaud<br>Monteux</a>
-          <a class="navbar-taggline d-none d-md-block" href="#hero-banner">Developer & Designer</a>
+          <a class="navbar-brand white" href="#hero-header">Arnaud<br>Monteux</a>
+          <a class="navbar-taggline d-none d-md-block" href="#hero-header">Developer & Designer</a>
         </div>
         <div>
           <ul class="nav">
@@ -49,17 +49,11 @@ function masquerHeaderAuScroll() {
       if (currentScrollPos > scrollThresholdBackground) {
           if (prevScrollPos > currentScrollPos) {
             header.classList.remove('header-show');
-            header.style.backgroundColor = 'rgba(20, 20, 20, 0.3)'; // Modifier la couleur de fond
-            header.style.backdropFilter = 'blur(10px)'; // Modifier le filtre de fond
           } else {
             header.classList.add('header-show');
-            header.style.backgroundColor = 'transparent'; // Réinitialiser la couleur de fond
-            header.style.backdropFilter = 'none'; // Réinitialiser le filtre de fond
           }
       } else {
         header.classList.remove('header-show');
-        header.style.backgroundColor = 'transparent'; // Réinitialiser la couleur de fond
-        header.style.backdropFilter = 'none'; // Réinitialiser le filtre de fond
       }
 
       prevScrollPos = currentScrollPos;
@@ -77,75 +71,70 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* Header scroll effect */
   .header-hide {
-      transition: transform .8s ease, background-color .8s ease;
-      transform: translateY(0);
+    transition: transform .8s ease;
+    transform: translateY(0);
   }
-
+  
   .header-show {
-      transform: translateY(-100%);
+    transform: translateY(-100%);
   }
 
   header .container {
-      /* border-bottom: 1px solid #F3DBC6; */
-      padding: 0px;
-
+    padding: 0px;
   }
 
   .navbar {
-      z-index: 100;
-      padding-left: 5vw;
-      padding-right: 5vw;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      height: 10vh;
-      background-color: transparent;
-      /* background-color: #1414144d; */
-      /* backdrop-filter: blur(10px); */
-      /* box-shadow: 0px 2px 10px #1414144d; */
+    z-index: 100;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(20, 20, 20, 0.3);
+    backdrop-filter: blur(10px);
   }
 
   .navbar-brand {
-      font-family: "Migra";
-      font-size: 20px;
-      line-height: 16px;
-      display: flex;
-      align-items: center;
-      color: var(--white);
-      transition: .2s ease-in-out;
+    font-family: "Migra";
+    font-size: 1.25rem;
+    line-height: 1rem;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    transition: .2s ease-in-out;
   }
 
   .navbar-brand:hover {
-      color: var(--orange);
-      /* transition: .3s ease-in-out; */
+    color: var(--orange);
   }
 
 
 
   .navbar-taggline {
-      font-family: "Tusker-grotesk";
-      letter-spacing: 0;
-      text-transform: uppercase;
-      color: var(--white);
-      text-decoration: none;
-      font-size: 32px;
-      margin-bottom: 0;
-      transition: letter-spacing 0.5s ease-in-out;
+    font-family: "Tusker-grotesk";
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 0;
+    transition: letter-spacing 0.5s ease-in-out;
   }
 
   .navbar-taggline:hover {
-      letter-spacing: 0.20em;
+    letter-spacing: .2rem;
   }
 
   header nav .nav-link {
-      font-family: "Tusker-grotesk-var2";
-      color: var(--white);
-      text-transform: uppercase;
-      font-size: 16px;
-      padding-right: 0;
+    font-family: "Tusker-grotesk-var2";
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding-right: 0;
   }
 
   header nav .nav-link:hover {
-      color: var(--orange);
+    color: var(--orange);
   }
 </style>

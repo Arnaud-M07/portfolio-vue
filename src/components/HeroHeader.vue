@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-header" ref="heroHeader" id="hero-header">
+  <section class="hero-header" ref="heroHeader" id="hero-header" aria-label="Introduction">
     <div class="container">
       <div class="row">
         <!-- Left part -->
@@ -13,12 +13,12 @@
         <!-- Right part -->
         <div class="col-12 col-sm-6">
           <div class="right-part">
-            <h3 class="text-end">
+            <h2 class="is-style-h3 text-end">
               Freelance web developer & designer,
               I enjoy minimalist, and abstract designs. 
               I draw inspiration from nature and art.
-            </h3>
-            <a class="btn button" href="#contact">CONTACT ME.</a>
+            </h2>
+            <a class="btn button" href="#contact" aria-label="Contact">CONTACT ME.</a>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@ onMounted(() => {
 
 <style scoped>
 .hero-header {
-  height: 100vh;
+  height: 100svh;
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -84,7 +84,7 @@ onMounted(() => {
 /* Left part */
 .hero-header .pre-header {
   font-family: "Migra";
-  font-size: 32px;
+  font-size: 2rem;
   color: var(--beige);
   margin-bottom: 0px;
   z-index: 2;
@@ -101,13 +101,13 @@ onMounted(() => {
 }
 
 .hero-header .right-part h3 {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   max-width: 576px;
 }
 
 @media all and (min-width: 768px) {
   .hero-header .right-part h3 {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 }
 
